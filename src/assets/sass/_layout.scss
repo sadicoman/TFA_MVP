@@ -11,11 +11,49 @@
     max-width: 360px;
     margin: auto;
 }
-
 /* Main */
+.section:first-child{
+    margin-top: 36px;
+}
 .section:last-child{
+    margin-bottom: 130px;
+}
+.grid.section--marginBottom{
     margin-bottom: 130px;
 }
 .images{
     max-width: 100%;
 }
+.title--baton::after{
+    content: url(../images/phasme_baton.svg);
+    width: 100px;
+    display: inline-flex;
+    padding-left: 10px;
+}
+.title--feuille::after{
+    content: url(../images/phasme_feuille.svg);
+    width: 50px;
+    display: inline-flex;
+    padding-left: 10px;
+}
+.section.grid.user--hide{
+    display: none;
+}
+.btn{
+    margin-top: 18px;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: inherit;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
+.btn:active{
+    transform: translateY(4px);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.8);
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+

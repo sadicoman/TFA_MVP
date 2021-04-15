@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projet TFA</title>
+	<title>Projet TFA MVP Food</title>
 	<link href="assets/css/main.css" rel="stylesheet" >
 	<script src="assets/js/main.min.js" defer></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 
 	<!-- Google -->
 	<meta name="title" content="François Szczepkowski - ">
@@ -39,25 +41,25 @@
 			<ul class="menu__liste">
 				<li class="menu__el">
 					<a href="index.html" class="lien">
-						<div><img src="assets/images/home.svg" class="icone"  alt="icone home"></div>
+						<div><img src="assets/images/home_negatif.svg" class="icone"  alt="icone home"></div>
 						<div><p>Home</p> </div>
 					</a>
 				</li>
 				<li class="menu__el">
 					<a href="oeuf.html" class="lien">
-						<div><img src="assets/images/oeufs.svg" class="icone"  alt="icone Oeuf"></div>
+						<div><img src="assets/images/oeufs_negatif.svg" class="icone"  alt="icone Oeuf"></div>
 						<div><p>Oeuf</p></div>
 					</a>
 				</li>
 				<li class="menu__el">
 					<a href="food.html" class="lien">
-						<div><img src="assets/images/feuille.svg" class="icone"  alt="icone food"></div>
+						<div><img src="assets/images/feuille_actif.svg" class="icone"  alt="icone food"></div>
 						<div><p>Food</p></div>
 					</a>
 				</li>
 				<li class="menu__el">
 					<a href="outils.html" class="lien">
-						<div><img src="assets/images/boite.svg" class="icone" alt="icone outils"></div>
+						<div><img src="assets/images/boite_negatif.svg" class="icone" alt="icone outils"></div>
 						<div><p>Outils</p></div>
 					</a>
 				</li>
@@ -65,12 +67,16 @@
 		</nav>
 	</header>
 	<main>
-		<section class="section grid">
-			<img src="" alt="Logo Phasmidaé">
-			<h1 class="title">Nouriture</h1>
+		<section class="section grid grid--navigation2">
+			<img src="assets/images/Logo_Phasmidae.svg" alt="Logo Phasmidaé">
+			<button id="ramulus"  class="btn mgrid-end3 disabled" data-filter="ramulus">Ramulus</button>
+			<button id="phyllium" class="btn mgrid-start3" data-filter="phyllium">Phyllium</button>
 		</section>
 		<section class="section grid">
-			<h2 class="title title--h2">RAMULUS</h2>
+			<h1 class="title">Nourriture</h1>
+		</section>
+		<section class="section grid section--marginBottom" data-filter="ramulus">
+			<h2 class="title title--h2 title--baton">RAMULUS</h2>
             <ul class="liste">
                 <li class="liste__el">Ronces</li>
                 <li class="liste__el">Framboisier</li>
@@ -80,8 +86,8 @@
             </ul>
             <p>Mais les ronces et le lierre fonctionnent très bien.</p>
         </section>
-		<section class="section grid">
-			<h2 class="title title--h2">PHYLLIUM</h2>
+		<section class="section grid user--hide" data-filter="phyllium">
+			<h2 class="title title--h2 title--feuille">PHYLLIUM</h2>
             <ul class="liste">
                 <li class="liste__el">Chêne</li>
                 <li class="liste__el">Hêtre</li>

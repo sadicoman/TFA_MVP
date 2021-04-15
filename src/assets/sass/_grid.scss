@@ -9,6 +9,16 @@
     padding: 0px 18px;
     margin-bottom: 36px;
 }
+.grid--navigation2{
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px 32px;
+}
 .grid > *{
     grid-column: 1 / -1;
+}
+.mgrid-start3{
+    grid-column-start: 3;
+}
+.mgrid-end3{
+    grid-column-end: 3;
 }
