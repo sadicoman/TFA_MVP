@@ -1,0 +1,21 @@
+/*
+ * LAYOUT
+** =============================================================== */
+
+.icone{
+    width:41px;
+}
+.body{
+    background-color: var(--color-background);
+    z-index: 1;
+    max-width: 360px;
+    margin: auto;
+}
+
+/* Main */
+.section:last-child{
+    margin-bottom: 130px;
+}
+.images{
+    max-width: 100%;
+}

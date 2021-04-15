@@ -1,0 +1,14 @@
+/*
+ * GRILLES
+** =============================================================== */
+/* Main */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 16px 8px;
+    padding: 0px 18px;
+    margin-bottom: 36px;
+}
+.grid > *{
+    grid-column: 1 / -1;
+}
