@@ -64,3 +64,23 @@
 .liste--outils .liste__el::before{
     content: url(../images/boite.svg);
 }
+
+
+@media screen and (min-width: 1440px) {
+    .menu{
+        
+        left: 0px;
+        top: 0px;
+        right: inherit;
+
+        &__liste{
+            grid-template-columns: 1fr;
+        }
+        &__el{
+            padding: 10px;;
+            border-right:inherit;
+            border-bottom: #000 1px solid;
+        }
+    }
+
+}
