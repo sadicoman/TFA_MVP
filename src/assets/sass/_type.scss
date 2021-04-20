@@ -58,6 +58,10 @@
     font-weight: bold;
 }
 
+.figure__legende{
+    text-align: right;
+    font-size: 0.8em;
+}
 
 @media screen and (min-width: 1440px) {
     .body{
@@ -71,5 +75,8 @@
     }
     .title--h3{
         font-size: 1.7777777777777777em;
+    }
+    .figure__legende{
+        text-align: left;
     }
 }
